@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+
+    <link href="css/style.css" rel="stylesheet"/>
+
+    <title>Fullstack Developer — Александр Шемякин</title>
+</head>
+    <body>
+        <div class="cursor-dot"></div>
+        <div class="cursor-trail"></div>
+        <nav class="nav" id="nav" aria-label="Главная навигация">
+            <div class="nav-inner">
+                <a href="#hero" class="nav-logo" aria-label="На главную">АШ<span class="dot">.</span></a>
+                <ul class="nav-links" role="list">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#demos">Демо</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">🌙</button>
+                <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+            <div class="mobile-menu" id="mobileMenu" role="menu">
+                <a href="#about" class="mm-link" role="menuitem">Обо мне</a>
+                <a href="#portfolio" class="mm-link" role="menuitem">Портфолио</a>
+                <a href="#demos" class="mm-link" role="menuitem">Демо</a>
+                <a href="#contact" class="mm-link" role="menuitem">Контакты</a>
+            </div>
+        </nav>
+        <section class="hero" id="hero" aria-label="Главный экран">
+            <div class="hero-bg" aria-hidden="true">
+                <div class="hero-grid"></div>
+                <div class="hero-blob blob1"></div>
+                <div class="hero-blob blob2"></div>
+            </div>
+            <div class="hero-content">
+                <p class="hero-eyebrow reveal"><span class="mono">// available for work</span></p>
+                <h1 class="hero-name reveal">Александр<br/><span class="name-accent">Шемякин</span></h1>
+                <p class="hero-role reveal">Fullstack-разработчик</p>
+                <p class="hero-sub reveal">Пишу проекты с нуля и дорабатываю существующие.<br/>От идеи до рабочего продукта — под ключ.</p>
+                <div class="hero-cta reveal">
+                    <a href="#portfolio" class="btn btn-primary">Смотреть работы</a>
+                    <a href="#contact" class="btn btn-ghost">Связаться</a>
+                </div>
+                <div class="hero-stats reveal" aria-label="Статистика">
+                    <div class="stat"><span class="stat-n">5+</span><span class="stat-l">лет опыта</span></div>
+                    <div class="stat-sep" aria-hidden="true"></div>
+                    <div class="stat"><span class="stat-n">40+</span><span class="stat-l">проектов</span></div>
+                    <div class="stat-sep" aria-hidden="true"></div>
+                    <div class="stat"><span class="stat-n">98%</span><span class="stat-l">довольных клиентов</span></div>
+                </div>
+            </div>
+            <div class="hero-visual reveal" aria-hidden="true">
+                <div class="code-window">
+                    <div class="cw-bar">
+                        <span class="cw-dot r"></span>
+                        <span class="cw-dot y"></span>
+                        <span class="cw-dot g"></span>
+                        <span class="cw-title">main.ts</span>
+                    </div>
+                    <pre class="cw-code"><code><span class="c-kw">const</span> <span class="c-fn">developer</span> = {
+                    <span class="c-key">name</span>: <span class="c-str">'Александр Шемякин'</span>,
+                    <span class="c-key">stack</span>: [
+                        <span class="c-str">'React'</span>, <span class="c-str">'Next.js'</span>,
+                        <span class="c-str">'Node.js'</span>, <span class="c-str">'TypeScript'</span>,
+                        <span class="c-str">'PostgreSQL'</span>, <span class="c-str">'Docker'</span>
+                    ],
+                    <span class="c-key">available</span>: <span class="c-bool">true</span>,
+                    <span class="c-fn">build</span>: <span class="c-kw">async</span> (idea) =&gt; {
+                        <span class="c-kw">return await</span> ship(idea);
+                    }
+                    };</code></pre>
+                </div>
+            </div>
+        </section>
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-label reveal"><span class="mono">01</span> Обо мне</div>
+                <div class="about-grid">
+                    <div class="about-img-wrap reveal">
+                        <div class="about-img-frame">
+                            <img
+                                src="https://i.ibb.co/MHWF0Pj/image.png"
+                                alt="Александр Шемякин — Fullstack разработчик"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="about-badge"><span class="mono">5+ лет в разработке</span></div>
+                    </div>
+                    <div class="about-text">
+                        <h2 class="reveal">Превращаю идеи<br/>в работающие продукты</h2>
+                        <p class="reveal">Привет! Я fullstack-разработчик с более чем пятилетним опытом. Работаю с малым и средним бизнесом, стартапами и частными клиентами — помогаю запустить проект с нуля или улучшить уже существующий.</p>
+                        <p class="reveal">Мой подход: сначала глубоко разобраться в задаче, потом писать код. Люблю чистую архитектуру, продуманный UX и результат, которым клиент гордится.</p>
+                        <div class="skills-wrap reveal">
+                            <div class="skill-group">
+                                <span class="skill-head">Frontend</span>
+                                <div class="skill-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Next.js</span>
+                                    <span class="tag">TypeScript</span>
+                                    <span class="tag">Tailwind</span>
+                                </div>
+                            </div>
+                            <div class="skill-group">
+                                <span class="skill-head">Backend</span>
+                                <div class="skill-tags">
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">Express</span>
+                                    <span class="tag">NestJS</span>
+                                    <span class="tag">PostgreSQL</span>
+                                </div>
+                            </div>
+                            <div class="skill-group">
+                                <span class="skill-head">Инфраструктура</span>
+                                <div class="skill-tags">
+                                    <span class="tag">Docker</span>
+                                    <span class="tag">Nginx</span>
+                                    <span class="tag">Vercel</span>
+                                    <span class="tag">AWS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <div class="section-label reveal"><span class="mono">02</span> Портфолио</div>
+                <h2 class="section-h reveal">Избранные работы</h2>
+                <div class="portfolio-grid">
+
+                    <article class="pcard reveal" data-project="0">
+                        <div class="pcard-img">
+                            <img src="https://i.ibb.co/W4csBCYZ/image.png" alt="E-commerce платформа" loading="lazy"/>
+                            <div class="pcard-overlay">
+                                <span class="pcard-tag">E-commerce</span>
+                                <button class="pcard-open-btn" aria-label="Открыть описание проекта">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pcard-body">
+                            <h3>Интернет-магазин электроники</h3>
+                            <p>Полноценный e-commerce с корзиной, оплатой, личным кабинетом и админ-панелью.</p>
+                            <div class="pcard-tech"><span>Next.js</span><span>YooKassa</span><span>PostgreSQL</span></div>
+                        </div>
+                    </article>
+
+                    <article class="pcard reveal" data-project="1">
+                        <div class="pcard-img">
+                            <img src="https://i.ibb.co/nMN3P8Yx/image.png" alt="CRM система" loading="lazy"/>
+                            <div class="pcard-overlay">
+                                <span class="pcard-tag">SaaS</span>
+                                <button class="pcard-open-btn" aria-label="Открыть описание проекта">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pcard-body">
+                            <h3>Аналитическая CRM-система</h3>
+                            <p>Дашборд с real-time графиками, управлением клиентами и автоматическими отчётами.</p>
+                            <div class="pcard-tech"><span>React</span><span>Node.js</span><span>WebSocket</span></div>
+                        </div>
+                    </article>
+
+                    <article class="pcard reveal" data-project="2">
+                        <div class="pcard-img">
+                            <img src="https://i.ibb.co/7JKs6M44/image.png" alt="Мобильное приложение доставки" loading="lazy"/>
+                            <div class="pcard-overlay">
+                                <span class="pcard-tag">Mobile</span>
+                                <button class="pcard-open-btn" aria-label="Открыть описание проекта">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pcard-body">
+                            <h3>Мобильное приложение доставки</h3>
+                            <p>Приложение для заказа еды с геолокацией, чатом с курьером и трекингом заказа.</p>
+                            <div class="pcard-tech"><span>React Native</span><span>Firebase</span><span>Maps API</span></div>
+                        </div>
+                    </article>
+
+                    <article class="pcard reveal" data-project="3">
+                        <div class="pcard-img">
+                            <img src="https://i.ibb.co/kg6NPZ7Y/image.png" alt="Корпоративный сайт" loading="lazy"/>
+                            <div class="pcard-overlay">
+                                <span class="pcard-tag">Landing</span>
+                                <button class="pcard-open-btn" aria-label="Открыть описание проекта">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                                    Подробнее
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pcard-body">
+                            <h3>Корпоративный сайт + CMS</h3>
+                            <p>Лендинг с анимациями, блогом, мультиязычностью и собственной системой управления.</p>
+                            <div class="pcard-tech"><span>Next.js</span><span>Sanity CMS</span><span>i18n</span></div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <section class="demos section" id="demos">
+            <div class="container">
+                <div class="section-label reveal"><span class="mono">03</span> Живые примеры</div>
+                <h2 class="section-h reveal">Посмотрите как это работает</h2>
+                <p class="section-sub reveal">Интерактивные демо прямо на странице — без переходов и заглушек</p>
+
+                <div class="demo-block reveal" id="deviceDemoBlock">
+                    <div class="demo-header">
+                        <h3>Адаптивный сайт</h3>
+                        <p>Переключайте устройства прямо в превью и смотрите как сайт адаптируется в реальном времени</p>
+                    </div>
+                    <div class="device-stage-wrapper" id="deviceStageWrapper">
+                        <div class="size-warning" id="sizeWarning">
+                            <p>Для полноценного просмотра интерактивного демо переключитесь на экран побольше.</p>
+                        </div>
+                        <div class="device-stage" id="deviceStage">
+
+                            <div class="device-thumbnails" id="deviceThumbs" aria-label="Выбор устройства">
+                                <button class="dev-thumb active" data-device="desktop" aria-label="Десктоп" aria-pressed="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                                    Десктоп
+                                </button>
+                                <button class="dev-thumb" data-device="tablet" aria-label="Планшет" aria-pressed="false">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="4" y="2" width="16" height="20" rx="2"/><circle cx="12" cy="18" r="1"/></svg>
+                                    Планшет
+                                </button>
+                                <button class="dev-thumb" data-device="mobile" aria-label="Телефон" aria-pressed="false">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="18" r="1"/></svg>
+                                    Телефон
+                                </button>
+                            </div>
+
+                            <div class="device-frame-wrap" id="deviceFrameWrap" data-current="desktop">
+
+                                <div class="df-desktop">
+                                    <div class="df-bar">
+                                        <span class="df-dot red"></span>
+                                        <span class="df-dot yellow"></span>
+                                        <span class="df-dot green"></span>
+                                        <span class="df-urlbar">example-site.com</span>
+                                    </div>
+                                    <div class="df-screen">
+                                        <iframe class="device-iframe" id="deviceIframe" title="Демо адаптивного сайта" scrolling="auto" style="width:860px;height:560px;display:block;border:none;"></iframe>
+                                    </div>
+                                </div>
+
+                                <div class="df-tablet">
+                                    <div class="df-screen">
+                                        <div class="df-tablet-urlbar">
+                                            <div class="df-tablet-url-pill">example-site.com</div>
+                                        </div>
+                                        <iframe class="device-iframe" id="deviceIframeTablet" title="Демо планшет" scrolling="yes" style="width:500px;height:520px;display:block;border:none;scrollbar-width:none;"></iframe>
+                                    </div>
+                                    <div class="df-home"></div>
+                                </div>
+
+                                <div class="df-mobile">
+                                    <div class="df-screen">
+                                        <div class="df-notch" aria-hidden="true"></div>
+                                        <div class="df-mobile-content">
+                                            <iframe class="device-iframe" id="deviceIframeMobile" title="Демо мобильный" scrolling="yes" style="width:320px;height:580px;display:block;border:none;scrollbar-width:none;"></iframe>
+                                        </div>
+                                        <div class="df-mobile-safari-bar" aria-hidden="true">
+                                            <div class="df-mobile-url-pill">example-site.com</div>
+                                            <div class="df-mobile-tab-row">
+                                                <div class="df-mobile-tab-btn">
+                                                    <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+                                                </div>
+                                                <div class="df-mobile-tab-btn">
+                                                    <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+                                                </div>
+                                                <div class="df-mobile-tab-btn">
+                                                    <svg viewBox="0 0 24 24"><path d="M4 12h16M12 4l8 8-8 8"/></svg>
+                                                </div>
+                                                <div class="df-mobile-tab-btn">
+                                                    <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                                                </div>
+                                                <div class="df-mobile-tab-btn">
+                                                    <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"/></svg>
+                                                </div>
+                                            </div>
+                                            <div class="df-mobile-home-bar"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-divider reveal">
+                    <span>Мини-каталог</span>
+                </div>
+
+                <div class="demo-block reveal" id="shopDemoBlock">
+                    <div class="demo-header">
+                        <h3>Мини-каталог с корзиной</h3>
+                        <p>Добавляйте товары, оформляйте заказ — полная имитация e-commerce</p>
+                    </div>
+                    <div class="shop-demo" id="shopDemo">
+                        <div style="display:flex;flex-direction:column;">
+                        <div class="shop-catalog" id="shopCatalog"></div>
+                        <div class="catalog-pagination" id="catalogPagination">
+                            <button class="cat-page-btn" id="catPrev" aria-label="Предыдущая страница">&#8592;</button>
+                            <div class="cat-page-nums" id="catPageNums"></div>
+                            <button class="cat-page-btn" id="catNext" aria-label="Следующая страница">&#8594;</button>
+                        </div>
+                        </div>
+                        <div class="shop-cart" id="shopCart">
+                            <div class="cart-head">
+                                <h4>Корзина</h4>
+                                <div class="cart-head-right">
+                                    <button class="cart-clear-btn" id="cartClearBtn" aria-label="Очистить корзину">Очистить</button>
+                                    <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+                                </div>
+                            </div>
+                            <div class="cart-items" id="cartItems">
+                                <div class="cart-empty">Корзина пуста</div>
+                            </div>
+                            <div class="cart-footer">
+                                <div class="cart-total">
+                                    <span>Итого:</span>
+                                    <strong id="cartTotal">0 ₽</strong>
+                                </div>
+                                <button class="btn btn-primary w-full" id="checkoutBtn" disabled aria-label="Оформить заказ">
+                                    Оформить заказ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-label reveal"><span class="mono">04</span> Контакты</div>
+                <h2 class="section-h reveal">Давайте работать вместе</h2>
+                <p class="section-sub reveal">Готов обсудить ваш проект. Отвечаю в течение нескольких часов.</p>
+                <div class="contact-grid">
+                    <a href="https://t.me/you_owner" target="_blank" rel="noopener noreferrer" class="clink reveal" aria-label="Написать в Telegram">
+                        <div class="clink-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
+                        </div>
+                        <div class="clink-text">
+                            <span class="clink-label">Telegram</span>
+                            <span class="clink-val">@you_owner</span>
+                        </div>
+                    </a>
+
+                    <a href="mailto:nesilents0ul@gmail.com" class="clink reveal" aria-label="Написать на Email">
+                        <div class="clink-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div class="clink-text">
+                            <span class="clink-label">Email</span>
+                            <span class="clink-val">nesilents0ul@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/nesilents0ul" target="_blank" rel="noopener noreferrer" class="clink reveal" aria-label="GitHub профиль">
+                        <div class="clink-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                        </div>
+                        <div class="clink-text">
+                            <span class="clink-label">GitHub</span>
+                            <span class="clink-val">github.com/nesilents0ul</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <span class="mono">© 2026 Александр Шемякин</span>
+                <span>Fullstack Developer</span>
+            </div>
+        </footer>
+
+        <div class="portfolio-modal-overlay" id="portfolioModalOverlay" role="dialog" aria-modal="true" aria-labelledby="pmTitle">
+            <div class="portfolio-modal-box" id="portfolioModalBox">
+                <button class="pm-close" id="pmClose" aria-label="Закрыть">✕</button>
+                <div class="pm-scroll">
+                <div class="pm-img">
+                    <img id="pmImage" src="" alt="" loading="lazy"/>
+                </div>
+                <div class="pm-body">
+                    <span class="pm-tag" id="pmTag"></span>
+                    <h2 id="pmTitle"></h2>
+                    <p id="pmDesc"></p>
+                    <div class="pm-tech" id="pmTech"></div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+            <div class="modal" id="checkoutModal">
+                <button class="modal-close" id="modalClose" aria-label="Закрыть">✕</button>
+
+                <div class="modal-step" id="stepForm">
+                    <h3 id="checkoutTitle">Оформление заказа</h3>
+                    <div class="modal-order-summary" id="modalSummary" aria-label="Состав заказа"></div>
+
+                    <div class="form-group">
+                        <label for="orderName">Имя</label>
+                        <input type="text" id="orderName" placeholder="Например: Иван" autocomplete="given-name"/>
+                        <span class="input-hint" id="nameHint"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Телефон</label>
+                        <div class="phone-row">
+                            <div class="cs-wrap" id="csWrap" role="combobox" aria-label="Код страны" aria-expanded="false">
+                                <div class="cs-selected" id="csSelected" tabindex="0" role="button" aria-haspopup="listbox">
+                                    🇷🇺 +7
+                                </div>
+                                <span class="cs-arrow" aria-hidden="true">▼</span>
+                                <div class="cs-dropdown" id="csDropdown" role="listbox" aria-label="Выберите код страны">
+                                    <div class="cs-option selected" data-value="+7" data-flag="🇷🇺" role="option" aria-selected="true">🇷🇺 Россия +7</div>
+                                    <div class="cs-option" data-value="+375" data-flag="🇧🇾" role="option" aria-selected="false">🇧🇾 Беларусь +375</div>
+                                    <div class="cs-option" data-value="+7" data-flag="🇰🇿" role="option" aria-selected="false">🇰🇿 Казахстан +7</div>
+                                    <div class="cs-option" data-value="+998" data-flag="🇺🇿" role="option" aria-selected="false">🇺🇿 Узбекистан +998</div>
+                                    <div class="cs-option" data-value="+996" data-flag="🇰🇬" role="option" aria-selected="false">🇰🇬 Кыргызстан +996</div>
+                                    <div class="cs-option" data-value="+992" data-flag="🇹🇯" role="option" aria-selected="false">🇹🇯 Таджикистан +992</div>
+                                    <div class="cs-option" data-value="+374" data-flag="🇦🇲" role="option" aria-selected="false">🇦🇲 Армения +374</div>
+                                    <div class="cs-option" data-value="+994" data-flag="🇦🇿" role="option" aria-selected="false">🇦🇿 Азербайджан +994</div>
+                                    <div class="cs-option" data-value="+373" data-flag="🇲🇩" role="option" aria-selected="false">🇲🇩 Молдова +373</div>
+                                    <div class="cs-option" data-value="+993" data-flag="🇹🇲" role="option" aria-selected="false">🇹🇲 Туркменистан +993</div>
+                                </div>
+                            </div>
+                            <div style="flex:1;display:flex;flex-direction:column;gap:4px;">
+                                <input type="tel" id="orderPhone" placeholder="900 000-00-00" autocomplete="tel-national"/>
+                                <span class="input-hint" id="phoneHint"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Способ оплаты</label>
+                        <div class="pay-methods">
+                            <label class="pay-opt">
+                                <input type="radio" name="pay" value="card" checked/>
+                                <span>💳 Карта</span>
+                            </label>
+                            <label class="pay-opt">
+                                <input type="radio" name="pay" value="cash"/>
+                                <span>💵 Наличные</span>
+                            </label>
+                            <label class="pay-opt">
+                                <input type="radio" name="pay" value="sbp"/>
+                                <span>📱 СБП</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+
+                    <div class="modal-total" id="modalTotal" aria-live="polite"></div>
+                    <button class="btn btn-primary w-full" id="payBtn">Оплатить</button>
+                    <p class="pay-emulation-note">Это эмуляция оплаты — деньги списаны не будут</p>
+                </div>
+
+                <div class="modal-step hidden" id="stepProcessing" aria-live="polite">
+                    <div class="processing-animation">
+                        <div class="spinner" aria-hidden="true"></div>
+                        <p>Обрабатываем оплату...</p>
+                    </div>
+                </div>
+
+                <div class="modal-step hidden" id="stepSuccess">
+                    <div class="stepSuccess-inner">
+                        <div class="success-icon" aria-hidden="true">✓</div>
+                        <p class="success-title">Заказ оформлен!</p>
+                        <p class="success-sub">Квитанция о заказе</p>
+                    </div>
+                    <div class="order-receipt" id="orderReceipt" aria-label="Квитанция"></div>
+                    <button class="btn btn-primary w-full" id="closeSuccessBtn">Отлично!</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="custom-toast" class="custom-toast" role="alert" aria-live="assertive"></div>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
