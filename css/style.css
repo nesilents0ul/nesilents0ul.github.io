@@ -1237,6 +1237,9 @@ button {
     isolation: isolate;
     -webkit-mask-image: -webkit-radial-gradient(white, black);
     mask-image: radial-gradient(white, black);
+    /* Safari: clip backdrop-filter children to rounded corners */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .df-mobile .df-notch {
@@ -1284,6 +1287,9 @@ button {
     -webkit-backdrop-filter: blur(28px) saturate(180%) brightness(1.08);
     border-top: 0.5px solid rgba(255,255,255,0.55);
     box-shadow: 0 -2px 16px rgba(0,0,0,.08);
+    /* Safari: ограничить блюр закруглёнными углами экрана */
+    border-radius: 0 0 33px 33px;
+    overflow: hidden;
 }
 
 .df-mobile-url-pill {
@@ -1802,11 +1808,15 @@ button {
     z-index: 200;
     max-height: 220px;
     overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     opacity: 0;
     pointer-events: none;
     transform: translateY(-6px);
     transition: opacity .2s, transform .2s;
 }
+
+.cs-dropdown::-webkit-scrollbar { display: none; }
 
 .cs-wrap.open .cs-dropdown {
     opacity: 1;
