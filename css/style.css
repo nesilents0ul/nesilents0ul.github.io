@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -16,7 +16,7 @@
     --clr-accent2: #8B5CF6;
     --clr-border: #E8E8F0;
     --clr-card: #FFFFFF;
-    --ff-sans: 'Inter', system-ui, sans-serif;
+    --ff-sans: 'Geologica', Arial, system-ui, sans-serif;
     --ff-mono: 'JetBrains Mono', monospace;
     --radius: 12px;
     --radius-lg: 20px;
@@ -678,12 +678,6 @@ button {
     font-weight: 500;
     color: var(--clr-ink2);
     transition: var(--transition);
-}
-
-.tag:hover {
-    border-color: var(--clr-accent);
-    color: var(--clr-accent);
-    background: rgba(99,102,241,.05);
 }
 
 /* Портфолио */
@@ -2271,7 +2265,6 @@ button {
     .container { padding: 0 20px; }
     .hero { padding: 100px 20px 60px; }
     .contact-grid { grid-template-columns: 1fr; }
-    /* shop-catalog columns are managed by JS via ResizeObserver */
     .pm-stats { grid-template-columns: repeat(3, 1fr); }
 }
 
