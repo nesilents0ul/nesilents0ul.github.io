@@ -1532,7 +1532,7 @@ button {
 }
 
 .product-qty-ctrl button {
-    width: 28px;
+    width: 50px;
     height: 28px;
     border-radius: 8px;
     border: 1.5px solid var(--clr-accent);
@@ -1546,6 +1546,12 @@ button {
     transition: var(--transition);
     flex-shrink: 0;
     line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .product-qty-ctrl button {
+        width: 40px;
+    }
 }
 
 .product-qty-ctrl button:hover {
